@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors :{
+        "yellow-green": "#cff540",
+        "dark-green" : "#15201f",
+        "form-gray" : "#282929",
+        "input-black" : "#1b1a1b"
+      },
+      opacity :{
+        3: ".03",
+        2: ".02"
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -14,5 +24,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
